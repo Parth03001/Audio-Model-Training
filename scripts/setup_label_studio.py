@@ -21,6 +21,8 @@ import sys
 import json
 import argparse
 import glob
+import http.server
+import threading
 from pathlib import Path
 
 # Label Studio SDK
@@ -94,12 +96,14 @@ def parse_args():
     parser.add_argument("--export_dir", default="data/annotations", help="Where to save exported annotations")
     parser.add_argument("--audio_server", default=None,
                         help="Base URL of HTTP audio server e.g. http://localhost:8090 "
-                             "(recommended on Windows — run: python -m http.server 8090 "
-                             "inside your audio_dir folder)")
+                             "(use --action serve to start a CORS-enabled server automatically)")
+    parser.add_argument("--port", type=int, default=8090,
+                        help="Port for the CORS-enabled audio file server (used with --action serve)")
     parser.add_argument("--action",
-                        choices=["setup", "export", "status"],
+                        choices=["setup", "export", "status", "serve"],
                         default="setup",
-                        help="setup=create project & import files | export=download annotations | status=print stats")
+                        help="setup=create project & import files | export=download annotations | "
+                             "status=print stats | serve=start CORS-enabled audio HTTP server")
     return parser.parse_args()
 
 
@@ -260,6 +264,56 @@ def convert_to_training_csv(tasks: list, output_path: Path) -> int:
     return len(rows)
 
 
+def serve_audio_files(audio_dir: str, port: int) -> None:
+    """Start a CORS-enabled HTTP server to serve audio files to Label Studio.
+
+    Label Studio's web UI runs at localhost:8080 and fetches audio from
+    localhost:<port>.  Browsers block cross-origin requests unless the server
+    sends the right headers — python -m http.server does NOT do this.
+    This function starts a server that always replies with:
+        Access-Control-Allow-Origin: *
+    so the browser can load the audio without errors.
+
+    Run this in one terminal, then in another terminal run --action setup.
+    """
+    audio_dir = Path(audio_dir).resolve()
+    if not audio_dir.is_dir():
+        print(f"ERROR: audio_dir not found: {audio_dir}")
+        sys.exit(1)
+
+    class CORSRequestHandler(http.server.SimpleHTTPRequestHandler):
+        def __init__(self, *args, **kwargs):
+            super().__init__(*args, directory=str(audio_dir), **kwargs)
+
+        def end_headers(self):
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.send_header("Access-Control-Allow-Methods", "GET, OPTIONS")
+            self.send_header("Access-Control-Allow-Headers", "Range")
+            # Required for audio seeking in browsers
+            self.send_header("Accept-Ranges", "bytes")
+            super().end_headers()
+
+        def do_OPTIONS(self):
+            self.send_response(200)
+            self.end_headers()
+
+        def log_message(self, fmt, *args):
+            # Suppress per-request noise; print a single startup line instead
+            pass
+
+    server = http.server.HTTPServer(("", port), CORSRequestHandler)
+    print(f"CORS audio server started at http://localhost:{port}")
+    print(f"Serving files from: {audio_dir}")
+    print(f"Now run in another terminal:")
+    print(f"  python scripts/setup_label_studio.py --token YOUR_TOKEN "
+          f"--audio_dir {audio_dir} --audio_server http://localhost:{port} --action setup")
+    print("Press Ctrl+C to stop.\n")
+    try:
+        server.serve_forever()
+    except KeyboardInterrupt:
+        print("\nServer stopped.")
+
+
 def print_status(proj) -> None:
     """Print annotation progress stats."""
     params = proj.get_params()
@@ -276,6 +330,12 @@ def print_status(proj) -> None:
 
 def main():
     args = parse_args()
+
+    # 'serve' does not need a Label Studio connection — handle it first
+    if args.action == "serve":
+        serve_audio_files(args.audio_dir, args.port)
+        return
+
     ls   = connect(args.host, args.token)
     proj = get_or_create_project(ls, args.project_name)
 

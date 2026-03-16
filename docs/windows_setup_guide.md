@@ -21,7 +21,9 @@ NVIDIA driver from: https://www.nvidia.com/Download/index.aspx
 
 ---
 
-## Step 2 — Install Python 3.10
+## Step 2 — Python Setup
+
+### Option A — Plain Python 3.10 (recommended if starting fresh)
 
 > Use exactly Python 3.10 — Label Studio and PyTorch both have best support here.
 
@@ -33,6 +35,20 @@ NVIDIA driver from: https://www.nvidia.com/Download/index.aspx
 ```cmd
 python --version
 # Should print: Python 3.10.x
+```
+
+### Option B — Using miniconda / Anaconda (if already installed)
+
+```powershell
+# Create a dedicated conda env with Python 3.10
+conda create -n bsr-audio-classification python=3.10 -y
+conda activate bsr-audio-classification
+
+# IMPORTANT: install setuptools first — prevents pkg_resources error
+pip install --upgrade setuptools pip
+
+# Fix sqlite3.dll issue (Label Studio needs this on Windows + conda)
+conda install -c anaconda sqlite -y
 ```
 
 ---
@@ -227,6 +243,30 @@ tensorboard --logdir runs
 ---
 
 ## Troubleshooting
+
+### `ModuleNotFoundError: No module named 'pkg_resources'`
+This happens with conda environments. Fix:
+```powershell
+pip install --upgrade setuptools
+```
+
+### `Can't load sqlite3.dll from current directory`
+Label Studio + conda on Windows. Two options:
+```powershell
+# Option 1 (preferred)
+conda install -c anaconda sqlite -y
+
+# Option 2 — copy DLL manually if option 1 doesn't help
+copy "$env:USERPROFILE\AppData\Local\miniconda3\Library\bin\sqlite3.dll" `
+     "$env:USERPROFILE\AppData\Local\miniconda3\envs\bsr-audio-classification\lib\site-packages\label_studio"
+```
+
+### Both errors at once — nuclear option
+If both errors persist together, pin Label Studio to 1.8.0 which has
+no sqlite conflict on conda:
+```powershell
+pip install label-studio==1.8.0
+```
 
 ### `label-studio` not found after install
 ```cmd

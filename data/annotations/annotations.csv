@@ -1,0 +1,11 @@
+file_id,file_name,start_frac,end_frac,label,overall_quality,notes,duration_sec
+74967_ok,74967_ok.wav,0.0,1.0,OK,OK,auto-labeled from folder structure,237.63
+74970_ok,74970_ok.wav,0.0,1.0,OK,OK,auto-labeled from folder structure,268.21
+77586_ok 1,77586_ok 1.wav,0.0,1.0,OK,OK,auto-labeled from folder structure,226.74
+78555_ok,78555_ok.wav,0.0,1.0,OK,OK,auto-labeled from folder structure,293.89
+78608_ok 2,78608_ok 2.wav,0.0,1.0,OK,OK,auto-labeled from folder structure,177.7
+76918not ok,76918not ok.wav,0.0,1.0,NOK_BSR,NOK,auto-labeled from folder structure,270.98
+77759_notok rear jog 1,77759_notok rear jog 1.wav,0.0,1.0,NOK_BSR,NOK,auto-labeled from folder structure,199.92
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,0.0,1.0,NOK_IP,NOK,auto-labeled from folder structure,276.32
+78554_notok_steering,78554_notok_steering.wav,0.0,1.0,NOK_BSR,NOK,auto-labeled from folder structure,164.63
+78558_notok_glass_fouling 1,78558_notok_glass_fouling 1.wav,0.0,1.0,NOK_Sunroof,NOK,auto-labeled from folder structure,98.82

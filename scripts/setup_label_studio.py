@@ -92,6 +92,10 @@ def parse_args():
     parser.add_argument("--audio_dir", default="data/raw", help="Directory containing audio files")
     parser.add_argument("--project_name", default="BSR_Audio_Classification")
     parser.add_argument("--export_dir", default="data/annotations", help="Where to save exported annotations")
+    parser.add_argument("--audio_server", default=None,
+                        help="Base URL of HTTP audio server e.g. http://localhost:8090 "
+                             "(recommended on Windows — run: python -m http.server 8090 "
+                             "inside your audio_dir folder)")
     parser.add_argument("--action",
                         choices=["setup", "export", "status"],
                         default="setup",
@@ -122,7 +126,7 @@ def get_or_create_project(ls: Client, name: str) -> object:
     return proj
 
 
-def import_audio_files(proj, audio_dir: str) -> int:
+def import_audio_files(proj, audio_dir: str, audio_server: str = None) -> int:
     """Import audio files from directory into Label Studio project."""
     audio_dir = Path(audio_dir)
     extensions = ["*.wav", "*.mp3", "*.flac", "*.ogg", "*.m4a"]
@@ -139,13 +143,19 @@ def import_audio_files(proj, audio_dir: str) -> int:
 
     tasks = []
     for f in sorted(files):
-        # Use forward slashes — Label Studio on Windows fails with backslashes
-        forward_path = str(f.resolve()).replace("\\", "/")
+        if audio_server:
+            # HTTP server mode — works reliably on Windows, no local-files issues
+            audio_url = f"{audio_server.rstrip('/')}/{f.name}"
+        else:
+            # Local files mode — may have issues on Windows
+            forward_path = str(f.resolve()).replace("\\", "/")
+            audio_url = f"/data/local-files/?d={forward_path}"
+
         tasks.append({
             "data": {
-                "audio": f"/data/local-files/?d={forward_path}",
+                "audio":     audio_url,
                 "file_name": f.name,
-                "file_id": f.stem,
+                "file_id":   f.stem,
             }
         })
 
@@ -270,7 +280,7 @@ def main():
     proj = get_or_create_project(ls, args.project_name)
 
     if args.action == "setup":
-        n = import_audio_files(proj, args.audio_dir)
+        n = import_audio_files(proj, args.audio_dir, args.audio_server)
         print(f"\nDone. Open {args.host} → project '{args.project_name}' to start labeling.")
         print("When done, run:  python scripts/setup_label_studio.py --action export --token YOUR_TOKEN")
 

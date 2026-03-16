@@ -21,8 +21,6 @@ import sys
 import json
 import argparse
 import glob
-import http.server
-import threading
 from pathlib import Path
 
 # Label Studio SDK
@@ -94,16 +92,16 @@ def parse_args():
     parser.add_argument("--audio_dir", default="data/raw", help="Directory containing audio files")
     parser.add_argument("--project_name", default="BSR_Audio_Classification")
     parser.add_argument("--export_dir", default="data/annotations", help="Where to save exported annotations")
-    parser.add_argument("--audio_server", default=None,
-                        help="Base URL of HTTP audio server e.g. http://localhost:8090 "
-                             "(use --action serve to start a CORS-enabled server automatically)")
-    parser.add_argument("--port", type=int, default=8090,
-                        help="Port for the CORS-enabled audio file server (used with --action serve)")
+    parser.add_argument("--local_root", default=None,
+                        help="Value of LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT env var. "
+                             "Audio URLs will be relative to this path. "
+                             "If omitted, the parent directory of --audio_dir is used. "
+                             "Must match the env var you set when starting Label Studio.")
     parser.add_argument("--action",
-                        choices=["setup", "export", "status", "serve"],
+                        choices=["setup", "export", "status"],
                         default="setup",
                         help="setup=create project & import files | export=download annotations | "
-                             "status=print stats | serve=start CORS-enabled audio HTTP server")
+                             "status=print stats")
     return parser.parse_args()
 
 
@@ -130,9 +128,37 @@ def get_or_create_project(ls: Client, name: str) -> object:
     return proj
 
 
-def import_audio_files(proj, audio_dir: str, audio_server: str = None) -> int:
-    """Import audio files from directory into Label Studio project."""
-    audio_dir = Path(audio_dir)
+def import_audio_files(proj, audio_dir: str, local_root: str = None) -> int:
+    """Import audio files using Label Studio's built-in local file serving.
+
+    Label Studio serves local files at /data/local-files/?d=<relative_path>
+    where <relative_path> is relative to LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT.
+
+    Label Studio MUST be started with these two env vars, e.g. on Windows:
+        set LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED=true
+        set LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT=D:\\develop\\Audio-Model-Training
+        label-studio start
+
+    Then pass --local_root D:\\develop\\Audio-Model-Training to this script,
+    or omit it and the parent of --audio_dir will be used automatically.
+    """
+    audio_dir = Path(audio_dir).resolve()
+
+    if local_root:
+        root = Path(local_root).resolve()
+    else:
+        root = audio_dir.parent
+        print(f"No --local_root given; using parent of audio_dir: {root}")
+
+    # Validate that audio_dir is inside root
+    try:
+        audio_dir.relative_to(root)
+    except ValueError:
+        print(f"ERROR: audio_dir ({audio_dir}) is not inside local_root ({root}).")
+        print("Set --local_root to a directory that is a parent of --audio_dir,")
+        print("and set LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT to the same value.")
+        sys.exit(1)
+
     extensions = ["*.wav", "*.mp3", "*.flac", "*.ogg", "*.m4a"]
     files = []
     for ext in extensions:
@@ -144,17 +170,14 @@ def import_audio_files(proj, audio_dir: str, audio_server: str = None) -> int:
         return 0
 
     print(f"Found {len(files)} audio files — importing...")
+    print(f"  local_root : {root}")
+    print(f"  audio_dir  : {audio_dir}")
 
     tasks = []
     for f in sorted(files):
-        if audio_server:
-            # HTTP server mode — works reliably on Windows, no local-files issues
-            audio_url = f"{audio_server.rstrip('/')}/{f.name}"
-        else:
-            # Local files mode — may have issues on Windows
-            forward_path = str(f.resolve()).replace("\\", "/")
-            audio_url = f"/data/local-files/?d={forward_path}"
-
+        # Path relative to document root, always forward-slashes
+        rel = f.relative_to(root).as_posix()
+        audio_url = f"/data/local-files/?d={rel}"
         tasks.append({
             "data": {
                 "audio":     audio_url,
@@ -264,56 +287,6 @@ def convert_to_training_csv(tasks: list, output_path: Path) -> int:
     return len(rows)
 
 
-def serve_audio_files(audio_dir: str, port: int) -> None:
-    """Start a CORS-enabled HTTP server to serve audio files to Label Studio.
-
-    Label Studio's web UI runs at localhost:8080 and fetches audio from
-    localhost:<port>.  Browsers block cross-origin requests unless the server
-    sends the right headers — python -m http.server does NOT do this.
-    This function starts a server that always replies with:
-        Access-Control-Allow-Origin: *
-    so the browser can load the audio without errors.
-
-    Run this in one terminal, then in another terminal run --action setup.
-    """
-    audio_dir = Path(audio_dir).resolve()
-    if not audio_dir.is_dir():
-        print(f"ERROR: audio_dir not found: {audio_dir}")
-        sys.exit(1)
-
-    class CORSRequestHandler(http.server.SimpleHTTPRequestHandler):
-        def __init__(self, *args, **kwargs):
-            super().__init__(*args, directory=str(audio_dir), **kwargs)
-
-        def end_headers(self):
-            self.send_header("Access-Control-Allow-Origin", "*")
-            self.send_header("Access-Control-Allow-Methods", "GET, OPTIONS")
-            self.send_header("Access-Control-Allow-Headers", "Range")
-            # Required for audio seeking in browsers
-            self.send_header("Accept-Ranges", "bytes")
-            super().end_headers()
-
-        def do_OPTIONS(self):
-            self.send_response(200)
-            self.end_headers()
-
-        def log_message(self, fmt, *args):
-            # Suppress per-request noise; print a single startup line instead
-            pass
-
-    server = http.server.HTTPServer(("", port), CORSRequestHandler)
-    print(f"CORS audio server started at http://localhost:{port}")
-    print(f"Serving files from: {audio_dir}")
-    print(f"Now run in another terminal:")
-    print(f"  python scripts/setup_label_studio.py --token YOUR_TOKEN "
-          f"--audio_dir {audio_dir} --audio_server http://localhost:{port} --action setup")
-    print("Press Ctrl+C to stop.\n")
-    try:
-        server.serve_forever()
-    except KeyboardInterrupt:
-        print("\nServer stopped.")
-
-
 def print_status(proj) -> None:
     """Print annotation progress stats."""
     params = proj.get_params()
@@ -330,17 +303,11 @@ def print_status(proj) -> None:
 
 def main():
     args = parse_args()
-
-    # 'serve' does not need a Label Studio connection — handle it first
-    if args.action == "serve":
-        serve_audio_files(args.audio_dir, args.port)
-        return
-
     ls   = connect(args.host, args.token)
     proj = get_or_create_project(ls, args.project_name)
 
     if args.action == "setup":
-        n = import_audio_files(proj, args.audio_dir, args.audio_server)
+        n = import_audio_files(proj, args.audio_dir, args.local_root)
         print(f"\nDone. Open {args.host} → project '{args.project_name}' to start labeling.")
         print("When done, run:  python scripts/setup_label_studio.py --action export --token YOUR_TOKEN")
 

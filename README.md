@@ -30,6 +30,31 @@ Audio-Model-Training/
 
 ---
 
+## Why You Cannot Use Whole-File Labels
+
+These audio files are **mixed recordings** — a file labeled "NOK" contains long
+stretches of clean driving interrupted by short defect bursts. A file labeled "OK"
+may contain brief road bumps or events that acoustically resemble BSR.
+
+Labeling the entire 4-5 min file as OK/NOK and then segmenting into 2-sec clips
+means the model gets thousands of clips with **wrong labels** — it will learn
+per-file recording conditions (road surface, speed, microphone placement) instead
+of the actual defect signature.
+
+**Verification on the 10 sample files:**
+| File | Folder label | Auto-detected anomalous events |
+|------|-------------|-------------------------------|
+| 74967_ok.wav | OK | **28 candidate events** (30s) |
+| 74970_ok.wav | OK | **26 candidate events** (27s) |
+| 78555_ok.wav | OK | **47 candidate events** (50s) |
+| 78608_ok 2.wav | OK | **71 candidate events** (78s) |
+| 77850_notok_ipNoise 9.wav | NOK | 105 events — but 159s is clean |
+
+Those anomalous events in "OK" files could be genuine missed defects or road
+events. Either way, labeling them "OK" based on the filename corrupts training.
+
+---
+
 ## Step-by-Step Workflow
 
 ### 0. Install dependencies
@@ -37,38 +62,55 @@ Audio-Model-Training/
 pip install -r requirements.txt
 ```
 
-### 1. Label your audio files
+### 1. Auto-detect candidate events (pre-labeling)
+
+This scans every file and flags acoustically anomalous regions using
+**per-file baseline normalisation** — so the file's own road noise becomes the
+reference. Output is a Label Studio import file with pre-drawn regions.
+
+```bash
+python scripts/auto_prelabel.py \
+    --audio_dir test_data \
+    --output    data/annotations/prelabels.json \
+    --threshold 3.5
+```
+
+### 2. Verify in Label Studio (human review)
 
 **Start Label Studio:**
 ```bash
 label-studio start
 # Opens at http://localhost:8080
-# Get your API token from: http://localhost:8080/user/account
+# Get API token: http://localhost:8080/user/account
 ```
 
-**Import your files:**
+**Create project and import pre-annotations:**
 ```bash
+# Create project (first time only)
 python scripts/setup_label_studio.py \
-    --token  YOUR_API_TOKEN \
-    --audio_dir data/raw \
+    --token YOUR_API_TOKEN \
+    --audio_dir test_data \
     --action setup
+
+# Then: Project → Import → select data/annotations/prelabels.json
+# Regions are already drawn — you only verify/correct, ~3-5 hrs for 65 files
 ```
 
 **Hotkeys in Label Studio:**
 | Key | Label | Meaning |
 |-----|-------|---------|
-| `1` | OK | Clean, no defect |
-| `2` | NOK_BSR | Buzz/squeak/rattle |
-| `3` | NOK_IP | Instrument panel creak |
-| `4` | NOK_Sunroof | Sunroof wind/rattle |
-| `5` | Unsure | Edge case (low weight in training) |
+| `1` | OK | Clean — reject this candidate region |
+| `2` | NOK_BSR | Buzz/squeak/rattle — confirm |
+| `3` | NOK_IP | Instrument panel creak — confirm |
+| `4` | NOK_Sunroof | Sunroof wind/rattle — confirm |
+| `5` | Unsure | Edge case (used with low weight, not discarded) |
 
-**Labeling strategy:**
-- Draw regions by clicking+dragging on the waveform
-- Set the "overall_quality" (OK/NOK) for the whole file at the top
-- For whole-file OK or NOK: just set overall_quality, skip drawing regions
+**Annotation rules:**
+- For each pre-drawn region: listen, then label it OR delete it if it's a road bump
+- Also check "OK" files — if a region sounds like a genuine rattle, label it NOK_BSR
+- The overall_quality field (OK/NOK at file top) is auto-suggested — correct it if needed
 
-**Export annotations when done:**
+**Export when done:**
 ```bash
 python scripts/setup_label_studio.py \
     --token YOUR_API_TOKEN \

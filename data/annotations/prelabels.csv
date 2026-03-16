@@ -1,0 +1,489 @@
+file_id,file_name,file_label,start_sec,end_sec,duration_sec,auto_label,needs_review
+76918not ok,76918not ok.wav,NOK,0.0,0.7,0.7,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,0.3,1.3,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,0.6,1.6,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,1.6,2.6,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,2.4,3.4,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,4.8,5.8,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,5.8,7.0,1.2,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,6.4,7.4,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,6.8,7.8,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,7.1,8.3,1.2,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,8.0,9.0,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,9.6,10.6,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,10.8,11.8,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,11.2,12.4,1.2,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,11.7,12.7,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,12.1,13.1,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,14.0,15.0,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,15.3,16.7,1.4,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,16.0,17.0,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,18.5,19.5,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,21.0,22.1,1.1,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,24.2,25.2,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,26.5,27.5,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,28.0,29.0,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,40.0,41.4,1.4,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,41.4,42.4,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,55.1,56.1,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,56.4,57.4,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,59.5,60.9,1.4,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,61.2,62.2,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,61.6,62.7,1.1,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,68.5,69.5,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,70.9,71.9,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,75.2,76.2,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,79.2,80.2,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,79.7,80.9,1.2,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,80.3,81.5,1.2,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,81.0,82.0,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,81.3,82.3,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,83.0,84.0,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,83.4,84.4,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,85.3,86.3,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,88.6,89.6,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,89.7,91.1,1.4,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,90.5,91.5,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,90.8,91.8,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,91.2,92.3,1.1,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,91.6,93.2,1.6,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,96.1,97.2,1.1,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,96.6,97.8,1.2,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,101.6,102.6,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,138.7,139.7,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,139.2,140.2,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,148.3,149.3,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,203.4,204.7,1.3,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,204.7,205.7,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,205.1,206.1,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,208.4,209.6,1.2,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,212.1,213.5,1.4,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,221.8,222.8,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,225.6,226.6,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,228.5,229.5,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,229.1,230.1,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,229.6,230.7,1.1,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,230.2,231.4,1.2,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,231.0,232.0,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,232.6,233.8,1.2,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,233.1,234.3,1.2,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,233.9,234.9,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,234.3,235.3,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,234.8,235.8,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,237.0,238.0,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,237.8,238.8,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,238.3,239.3,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,241.3,242.3,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,241.7,242.7,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,245.4,246.4,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,248.7,249.7,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,249.0,250.9,1.9,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,250.6,251.9,1.3,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,256.6,257.6,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,256.9,257.9,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,258.6,259.6,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,259.1,260.1,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,259.7,260.7,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,260.8,261.8,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,261.8,262.8,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,262.9,263.9,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,264.7,266.0,1.3,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,265.6,266.9,1.3,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,266.3,267.3,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,266.6,267.6,1.0,NOK_BSR,True
+76918not ok,76918not ok.wav,NOK,267.0,268.4,1.4,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,0.0,0.7,0.7,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,11.8,12.8,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,17.8,18.8,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,18.5,19.5,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,19.0,20.0,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,21.8,22.8,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,22.2,23.2,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,23.1,24.1,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,23.5,24.5,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,24.0,25.0,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,25.5,26.5,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,28.0,29.3,1.3,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,28.9,30.3,1.4,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,29.8,31.0,1.2,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,31.8,32.8,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,40.8,41.8,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,41.3,42.3,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,46.8,48.0,1.2,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,49.0,50.0,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,50.8,51.8,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,51.2,52.5,1.3,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,53.5,54.5,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,56.8,57.8,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,59.5,60.5,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,92.7,93.7,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,93.2,94.2,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,96.7,97.7,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,100.8,101.8,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,103.0,104.1,1.1,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,103.4,104.4,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,133.4,134.4,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,134.1,135.1,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,135.8,136.8,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,136.6,137.6,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,137.3,138.3,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,138.1,139.1,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,138.9,139.9,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,140.4,141.4,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,141.1,142.1,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,142.9,143.9,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,143.5,144.5,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,150.5,151.5,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,151.4,152.4,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,155.9,156.9,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,156.5,157.5,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,162.8,163.8,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,163.3,164.3,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,166.5,167.5,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,166.9,168.2,1.3,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,167.7,168.7,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,168.1,169.3,1.2,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,168.9,169.9,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,171.1,172.1,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,177.0,178.2,1.2,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,183.2,184.2,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,187.0,188.0,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,189.1,190.5,1.4,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,189.8,191.3,1.5,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,191.5,192.5,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,192.0,193.0,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,193.4,194.4,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,193.8,194.8,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,197.1,198.1,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,197.8,198.8,1.0,NOK_BSR,True
+77759_notok rear jog 1,77759_notok rear jog 1.wav,NOK,198.1,199.1,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,0.0,0.7,0.7,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,0.6,1.6,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,1.0,2.0,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,1.4,2.4,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,3.0,4.0,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,3.9,5.1,1.2,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,6.0,7.5,1.5,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,7.9,9.3,1.4,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,8.6,9.6,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,9.1,10.1,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,9.4,10.4,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,10.2,11.2,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,13.0,14.0,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,13.4,14.4,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,14.0,15.0,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,14.4,15.6,1.2,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,16.1,17.1,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,16.4,17.4,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,16.7,17.7,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,17.5,18.5,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,19.1,20.1,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,20.1,21.5,1.4,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,21.2,22.2,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,21.5,22.5,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,23.2,24.2,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,24.3,25.3,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,24.6,25.6,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,24.9,26.9,2.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,26.8,27.9,1.1,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,28.1,29.1,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,30.3,31.3,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,30.6,31.6,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,31.8,32.8,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,33.3,34.3,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,34.6,35.6,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,39.9,40.9,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,46.1,48.3,2.2,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,47.6,49.1,1.5,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,49.3,51.1,1.8,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,50.6,52.0,1.4,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,51.4,52.6,1.2,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,52.0,53.0,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,53.7,54.7,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,55.1,56.1,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,55.7,56.7,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,56.3,57.3,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,56.6,57.6,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,56.9,58.0,1.1,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,58.8,61.0,2.2,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,62.2,63.2,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,62.7,64.2,1.5,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,63.5,65.2,1.7,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,64.7,65.7,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,67.7,69.0,1.3,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,68.7,69.7,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,69.0,70.2,1.2,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,69.6,71.0,1.4,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,70.6,71.6,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,71.0,72.0,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,72.0,73.0,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,72.6,73.6,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,91.7,92.9,1.2,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,92.5,93.5,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,92.8,93.8,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,93.7,94.7,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,95.5,96.5,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,96.3,97.5,1.2,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,98.8,99.8,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,99.2,100.4,1.2,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,99.8,100.8,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,101.3,102.3,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,102.0,103.0,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,102.6,103.6,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,125.7,127.0,1.3,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,126.4,127.6,1.2,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,127.2,128.6,1.4,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,133.3,134.3,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,133.8,134.8,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,136.1,137.4,1.3,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,139.0,140.0,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,140.1,141.1,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,140.8,141.8,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,143.7,144.7,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,146.2,147.2,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,146.6,147.7,1.1,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,211.4,212.4,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,216.7,217.7,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,245.5,246.5,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,246.0,247.0,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,247.9,249.3,1.4,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,248.6,249.6,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,250.0,251.0,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,253.5,254.5,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,254.3,255.3,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,259.5,260.5,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,262.5,263.5,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,263.1,264.5,1.4,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,264.0,265.4,1.4,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,266.6,267.7,1.1,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,269.8,270.8,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,271.4,272.4,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,271.8,272.8,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,272.5,273.5,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,273.6,274.6,1.0,NOK_BSR,True
+77850_notok_ipNoise 9,77850_notok_ipNoise 9.wav,NOK,274.0,275.1,1.1,NOK_BSR,True
+78554_notok_steering,78554_notok_steering.wav,NOK,0.0,0.9,0.9,NOK_BSR,True
+78554_notok_steering,78554_notok_steering.wav,NOK,7.3,8.3,1.0,NOK_BSR,True
+78554_notok_steering,78554_notok_steering.wav,NOK,7.6,8.8,1.2,NOK_BSR,True
+78554_notok_steering,78554_notok_steering.wav,NOK,26.5,27.5,1.0,NOK_BSR,True
+78554_notok_steering,78554_notok_steering.wav,NOK,27.0,28.0,1.0,NOK_BSR,True
+78554_notok_steering,78554_notok_steering.wav,NOK,47.2,48.2,1.0,NOK_BSR,True
+78554_notok_steering,78554_notok_steering.wav,NOK,68.0,69.0,1.0,NOK_BSR,True
+78554_notok_steering,78554_notok_steering.wav,NOK,92.8,93.8,1.0,NOK_BSR,True
+78554_notok_steering,78554_notok_steering.wav,NOK,96.2,97.3,1.1,NOK_BSR,True
+78554_notok_steering,78554_notok_steering.wav,NOK,96.6,97.6,1.0,NOK_BSR,True
+78554_notok_steering,78554_notok_steering.wav,NOK,97.6,98.6,1.0,NOK_BSR,True
+78554_notok_steering,78554_notok_steering.wav,NOK,98.2,99.2,1.0,NOK_BSR,True
+78554_notok_steering,78554_notok_steering.wav,NOK,98.8,99.9,1.1,NOK_BSR,True
+78554_notok_steering,78554_notok_steering.wav,NOK,103.3,104.3,1.0,NOK_BSR,True
+78554_notok_steering,78554_notok_steering.wav,NOK,112.1,113.2,1.1,NOK_BSR,True
+78554_notok_steering,78554_notok_steering.wav,NOK,112.7,113.8,1.1,NOK_BSR,True
+78554_notok_steering,78554_notok_steering.wav,NOK,115.2,116.2,1.0,NOK_BSR,True
+78554_notok_steering,78554_notok_steering.wav,NOK,115.7,116.7,1.0,NOK_BSR,True
+78554_notok_steering,78554_notok_steering.wav,NOK,117.7,118.7,1.0,NOK_BSR,True
+78554_notok_steering,78554_notok_steering.wav,NOK,118.2,119.2,1.0,NOK_BSR,True
+78554_notok_steering,78554_notok_steering.wav,NOK,120.2,121.2,1.0,NOK_BSR,True
+78554_notok_steering,78554_notok_steering.wav,NOK,120.7,121.7,1.0,NOK_BSR,True
+78558_notok_glass_fouling 1,78558_notok_glass_fouling 1.wav,NOK,0.0,0.7,0.7,NOK_BSR,True
+78558_notok_glass_fouling 1,78558_notok_glass_fouling 1.wav,NOK,1.6,2.6,1.0,NOK_BSR,True
+78558_notok_glass_fouling 1,78558_notok_glass_fouling 1.wav,NOK,4.5,5.5,1.0,NOK_BSR,True
+78558_notok_glass_fouling 1,78558_notok_glass_fouling 1.wav,NOK,7.3,8.3,1.0,NOK_BSR,True
+78558_notok_glass_fouling 1,78558_notok_glass_fouling 1.wav,NOK,14.3,15.3,1.0,NOK_BSR,True
+78558_notok_glass_fouling 1,78558_notok_glass_fouling 1.wav,NOK,14.9,15.9,1.0,NOK_BSR,True
+78558_notok_glass_fouling 1,78558_notok_glass_fouling 1.wav,NOK,18.9,19.9,1.0,NOK_BSR,True
+78558_notok_glass_fouling 1,78558_notok_glass_fouling 1.wav,NOK,20.1,21.1,1.0,NOK_BSR,True
+78558_notok_glass_fouling 1,78558_notok_glass_fouling 1.wav,NOK,23.0,24.0,1.0,NOK_BSR,True
+78558_notok_glass_fouling 1,78558_notok_glass_fouling 1.wav,NOK,23.4,24.4,1.0,NOK_BSR,True
+78558_notok_glass_fouling 1,78558_notok_glass_fouling 1.wav,NOK,24.1,25.1,1.0,NOK_BSR,True
+78558_notok_glass_fouling 1,78558_notok_glass_fouling 1.wav,NOK,52.8,53.8,1.0,NOK_BSR,True
+74967_ok,74967_ok.wav,OK,3.2,4.2,1.0,Unsure,True
+74967_ok,74967_ok.wav,OK,4.7,5.7,1.0,Unsure,True
+74967_ok,74967_ok.wav,OK,5.0,6.2,1.2,Unsure,True
+74967_ok,74967_ok.wav,OK,12.9,14.1,1.2,Unsure,True
+74967_ok,74967_ok.wav,OK,39.1,40.1,1.0,Unsure,True
+74967_ok,74967_ok.wav,OK,39.8,40.8,1.0,Unsure,True
+74967_ok,74967_ok.wav,OK,58.9,59.9,1.0,Unsure,True
+74967_ok,74967_ok.wav,OK,80.2,81.4,1.2,Unsure,True
+74967_ok,74967_ok.wav,OK,82.7,83.7,1.0,Unsure,True
+74967_ok,74967_ok.wav,OK,83.3,84.3,1.0,Unsure,True
+74967_ok,74967_ok.wav,OK,85.4,86.9,1.5,Unsure,True
+74967_ok,74967_ok.wav,OK,86.2,87.4,1.2,Unsure,True
+74967_ok,74967_ok.wav,OK,88.2,89.2,1.0,Unsure,True
+74967_ok,74967_ok.wav,OK,99.7,100.8,1.1,Unsure,True
+74967_ok,74967_ok.wav,OK,100.1,101.2,1.1,Unsure,True
+74967_ok,74967_ok.wav,OK,100.7,101.7,1.0,Unsure,True
+74967_ok,74967_ok.wav,OK,149.1,150.2,1.1,Unsure,True
+74967_ok,74967_ok.wav,OK,160.5,161.5,1.0,Unsure,True
+74967_ok,74967_ok.wav,OK,178.8,179.8,1.0,Unsure,True
+74967_ok,74967_ok.wav,OK,191.7,192.7,1.0,Unsure,True
+74967_ok,74967_ok.wav,OK,192.2,193.2,1.0,Unsure,True
+74967_ok,74967_ok.wav,OK,206.8,207.8,1.0,Unsure,True
+74967_ok,74967_ok.wav,OK,209.0,210.4,1.4,Unsure,True
+74967_ok,74967_ok.wav,OK,210.6,211.7,1.1,Unsure,True
+74967_ok,74967_ok.wav,OK,211.0,212.2,1.2,Unsure,True
+74967_ok,74967_ok.wav,OK,212.3,213.3,1.0,Unsure,True
+74967_ok,74967_ok.wav,OK,213.5,214.5,1.0,Unsure,True
+74967_ok,74967_ok.wav,OK,215.6,216.6,1.0,Unsure,True
+74970_ok,74970_ok.wav,OK,16.0,17.0,1.0,Unsure,True
+74970_ok,74970_ok.wav,OK,16.9,17.9,1.0,Unsure,True
+74970_ok,74970_ok.wav,OK,17.2,18.2,1.0,Unsure,True
+74970_ok,74970_ok.wav,OK,72.0,73.0,1.0,Unsure,True
+74970_ok,74970_ok.wav,OK,94.4,95.4,1.0,Unsure,True
+74970_ok,74970_ok.wav,OK,98.8,99.8,1.0,Unsure,True
+74970_ok,74970_ok.wav,OK,99.8,100.8,1.0,Unsure,True
+74970_ok,74970_ok.wav,OK,100.5,101.5,1.0,Unsure,True
+74970_ok,74970_ok.wav,OK,101.4,102.4,1.0,Unsure,True
+74970_ok,74970_ok.wav,OK,101.9,102.9,1.0,Unsure,True
+74970_ok,74970_ok.wav,OK,103.0,104.0,1.0,Unsure,True
+74970_ok,74970_ok.wav,OK,103.3,104.3,1.0,Unsure,True
+74970_ok,74970_ok.wav,OK,110.2,111.3,1.1,Unsure,True
+74970_ok,74970_ok.wav,OK,110.6,111.6,1.0,Unsure,True
+74970_ok,74970_ok.wav,OK,114.6,115.6,1.0,Unsure,True
+74970_ok,74970_ok.wav,OK,115.1,116.1,1.0,Unsure,True
+74970_ok,74970_ok.wav,OK,152.3,153.3,1.0,Unsure,True
+74970_ok,74970_ok.wav,OK,164.3,165.3,1.0,Unsure,True
+74970_ok,74970_ok.wav,OK,229.4,230.6,1.2,Unsure,True
+74970_ok,74970_ok.wav,OK,229.9,231.2,1.3,Unsure,True
+74970_ok,74970_ok.wav,OK,230.7,231.7,1.0,Unsure,True
+74970_ok,74970_ok.wav,OK,233.2,234.2,1.0,Unsure,True
+74970_ok,74970_ok.wav,OK,233.9,235.3,1.4,Unsure,True
+74970_ok,74970_ok.wav,OK,237.7,238.7,1.0,Unsure,True
+74970_ok,74970_ok.wav,OK,239.6,240.8,1.2,Unsure,True
+74970_ok,74970_ok.wav,OK,250.4,251.6,1.2,Unsure,True
+77586_ok 1,77586_ok 1.wav,OK,0.0,0.7,0.7,Unsure,True
+77586_ok 1,77586_ok 1.wav,OK,15.2,16.2,1.0,Unsure,True
+77586_ok 1,77586_ok 1.wav,OK,25.9,26.9,1.0,Unsure,True
+77586_ok 1,77586_ok 1.wav,OK,37.4,38.4,1.0,Unsure,True
+77586_ok 1,77586_ok 1.wav,OK,40.5,41.5,1.0,Unsure,True
+77586_ok 1,77586_ok 1.wav,OK,53.6,54.6,1.0,Unsure,True
+77586_ok 1,77586_ok 1.wav,OK,81.0,82.0,1.0,Unsure,True
+77586_ok 1,77586_ok 1.wav,OK,82.2,83.2,1.0,Unsure,True
+77586_ok 1,77586_ok 1.wav,OK,91.8,92.8,1.0,Unsure,True
+77586_ok 1,77586_ok 1.wav,OK,92.4,93.4,1.0,Unsure,True
+77586_ok 1,77586_ok 1.wav,OK,93.6,94.7,1.1,Unsure,True
+77586_ok 1,77586_ok 1.wav,OK,94.0,95.0,1.0,Unsure,True
+77586_ok 1,77586_ok 1.wav,OK,105.7,106.7,1.0,Unsure,True
+77586_ok 1,77586_ok 1.wav,OK,106.7,107.9,1.2,Unsure,True
+77586_ok 1,77586_ok 1.wav,OK,107.7,108.7,1.0,Unsure,True
+77586_ok 1,77586_ok 1.wav,OK,108.1,109.4,1.3,Unsure,True
+77586_ok 1,77586_ok 1.wav,OK,114.4,115.8,1.4,Unsure,True
+77586_ok 1,77586_ok 1.wav,OK,130.3,131.3,1.0,Unsure,True
+77586_ok 1,77586_ok 1.wav,OK,216.5,217.7,1.2,Unsure,True
+78555_ok,78555_ok.wav,OK,0.0,0.9,0.9,Unsure,True
+78555_ok,78555_ok.wav,OK,20.0,21.0,1.0,Unsure,True
+78555_ok,78555_ok.wav,OK,27.4,28.4,1.0,Unsure,True
+78555_ok,78555_ok.wav,OK,44.6,45.6,1.0,Unsure,True
+78555_ok,78555_ok.wav,OK,45.3,46.3,1.0,Unsure,True
+78555_ok,78555_ok.wav,OK,45.7,46.7,1.0,Unsure,True
+78555_ok,78555_ok.wav,OK,91.8,92.8,1.0,Unsure,True
+78555_ok,78555_ok.wav,OK,92.9,94.0,1.1,Unsure,True
+78555_ok,78555_ok.wav,OK,93.5,94.5,1.0,Unsure,True
+78555_ok,78555_ok.wav,OK,95.7,97.3,1.6,Unsure,True
+78555_ok,78555_ok.wav,OK,96.6,98.0,1.4,Unsure,True
+78555_ok,78555_ok.wav,OK,97.4,98.5,1.1,Unsure,True
+78555_ok,78555_ok.wav,OK,97.9,98.9,1.0,Unsure,True
+78555_ok,78555_ok.wav,OK,98.3,99.7,1.4,Unsure,True
+78555_ok,78555_ok.wav,OK,99.1,100.1,1.0,Unsure,True
+78555_ok,78555_ok.wav,OK,107.0,108.2,1.2,Unsure,True
+78555_ok,78555_ok.wav,OK,119.7,121.1,1.4,Unsure,True
+78555_ok,78555_ok.wav,OK,121.3,122.4,1.1,Unsure,True
+78555_ok,78555_ok.wav,OK,121.8,123.0,1.2,Unsure,True
+78555_ok,78555_ok.wav,OK,122.3,123.4,1.1,Unsure,True
+78555_ok,78555_ok.wav,OK,125.9,127.4,1.5,Unsure,True
+78555_ok,78555_ok.wav,OK,126.8,127.9,1.1,Unsure,True
+78555_ok,78555_ok.wav,OK,127.4,128.4,1.0,Unsure,True
+78555_ok,78555_ok.wav,OK,128.3,129.3,1.0,Unsure,True
+78555_ok,78555_ok.wav,OK,128.8,129.8,1.0,Unsure,True
+78555_ok,78555_ok.wav,OK,130.2,131.2,1.0,Unsure,True
+78555_ok,78555_ok.wav,OK,130.7,131.7,1.0,Unsure,True
+78555_ok,78555_ok.wav,OK,132.2,133.2,1.0,Unsure,True
+78555_ok,78555_ok.wav,OK,190.5,191.5,1.0,Unsure,True
+78555_ok,78555_ok.wav,OK,193.4,194.4,1.0,Unsure,True
+78555_ok,78555_ok.wav,OK,193.8,194.8,1.0,Unsure,True
+78555_ok,78555_ok.wav,OK,196.3,197.3,1.0,Unsure,True
+78555_ok,78555_ok.wav,OK,205.1,206.2,1.1,Unsure,True
+78555_ok,78555_ok.wav,OK,214.1,215.1,1.0,Unsure,True
+78555_ok,78555_ok.wav,OK,219.0,220.0,1.0,Unsure,True
+78555_ok,78555_ok.wav,OK,219.3,220.3,1.0,Unsure,True
+78555_ok,78555_ok.wav,OK,231.9,232.9,1.0,Unsure,True
+78555_ok,78555_ok.wav,OK,234.3,235.3,1.0,Unsure,True
+78555_ok,78555_ok.wav,OK,234.6,235.6,1.0,Unsure,True
+78555_ok,78555_ok.wav,OK,237.6,238.6,1.0,Unsure,True
+78555_ok,78555_ok.wav,OK,242.6,243.6,1.0,Unsure,True
+78555_ok,78555_ok.wav,OK,262.4,263.4,1.0,Unsure,True
+78555_ok,78555_ok.wav,OK,263.7,264.7,1.0,Unsure,True
+78555_ok,78555_ok.wav,OK,272.5,273.5,1.0,Unsure,True
+78555_ok,78555_ok.wav,OK,275.0,276.0,1.0,Unsure,True
+78555_ok,78555_ok.wav,OK,284.9,286.1,1.2,Unsure,True
+78555_ok,78555_ok.wav,OK,286.2,287.2,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,0.0,1.2,1.2,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,2.4,3.5,1.1,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,9.1,10.1,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,9.9,10.9,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,12.6,13.6,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,15.7,16.7,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,19.5,20.5,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,29.1,30.6,1.5,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,45.8,46.8,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,46.5,47.5,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,51.9,52.9,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,53.2,54.2,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,60.3,61.3,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,60.7,61.7,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,61.3,62.3,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,64.8,65.8,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,65.4,66.4,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,66.0,67.2,1.2,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,66.8,67.8,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,67.2,68.2,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,68.2,69.6,1.4,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,68.9,69.9,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,70.4,71.7,1.3,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,71.3,72.3,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,71.8,72.9,1.1,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,84.0,85.0,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,90.2,91.2,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,90.8,92.3,1.5,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,92.7,93.7,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,93.5,94.5,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,94.3,95.9,1.6,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,95.4,96.6,1.2,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,96.7,97.7,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,97.1,98.3,1.2,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,99.2,100.4,1.2,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,99.9,100.9,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,104.9,105.9,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,105.6,106.7,1.1,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,106.1,107.1,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,111.4,112.4,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,112.0,113.0,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,112.3,113.3,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,112.8,113.8,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,113.7,115.1,1.4,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,119.0,120.5,1.5,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,119.9,121.3,1.4,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,120.6,121.6,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,121.3,122.3,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,123.2,124.2,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,127.7,129.1,1.4,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,128.8,130.2,1.4,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,129.5,130.5,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,130.0,131.0,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,130.4,131.4,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,131.3,132.3,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,133.0,134.4,1.4,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,134.7,135.7,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,138.1,139.2,1.1,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,138.6,139.6,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,146.4,147.4,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,147.0,148.0,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,152.0,153.0,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,153.5,155.4,1.9,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,155.0,156.0,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,157.2,158.2,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,158.4,159.4,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,159.1,160.1,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,159.5,160.5,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,164.9,165.9,1.0,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,165.9,167.1,1.2,Unsure,True
+78608_ok 2,78608_ok 2.wav,OK,169.9,170.9,1.0,Unsure,True

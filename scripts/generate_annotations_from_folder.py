@@ -1,23 +1,40 @@
 """
 Generate Annotations CSV from Folder Structure
 ===============================================
-Use this when audio files are already sorted into OK/ and NOK/ subfolders
-(as in the test_data/ directory) — skips Label Studio entirely for those files.
+!! WARNING — DO NOT USE FOR TRAINING DATA !!
 
-Produces data/annotations/annotations.csv in exactly the same format that
-setup_label_studio.py export produces, so segment_data.py + train.py
-work without any changes.
+This script assigns whole-file labels (OK/NOK) based purely on folder name.
+That approach creates biased training data because:
 
-Usage:
-    python scripts/generate_annotations_from_folder.py \
-        --ok_dir    test_data/ok \
-        --nok_dir   test_data/not_ok \
-        --output    data/annotations/annotations.csv
+  1. "OK" files often contain brief rattles or road events that should be NOK
+  2. "NOK" files contain long stretches of clean driving between defect events
 
-    # Or point at a single root dir that contains ok/ and not_ok/ subdirs:
-    python scripts/generate_annotations_from_folder.py \
-        --root_dir  test_data \
-        --output    data/annotations/annotations.csv
+Training on these noisy whole-file labels teaches the model to recognise
+PER-FILE acoustic identity (recording conditions, driver behaviour, road surface)
+rather than the actual BSR defect signature.
+
+USE THIS INSTEAD:
+  Step 1 — Auto-detect candidate NOK events acoustically:
+      python scripts/auto_prelabel.py --audio_dir test_data
+
+  Step 2 — Import prelabels.json into Label Studio and verify each region.
+
+  Step 3 — Export verified annotations:
+      python scripts/setup_label_studio.py --action export --token YOUR_TOKEN
+
+This script is kept only as a LAST RESORT baseline for quick experiments
+when you have no time to annotate.  Expect lower model quality.
+"""
+
+import sys
+print("=" * 70)
+print("WARNING: generate_annotations_from_folder.py produces BIASED labels.")
+print("Use auto_prelabel.py + Label Studio verification instead.")
+print("Run with --force to proceed anyway (not recommended for final model).")
+print("=" * 70)
+
+if "--force" not in sys.argv:
+    sys.exit(1)
 """
 
 import csv

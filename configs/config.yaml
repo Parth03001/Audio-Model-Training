@@ -1,0 +1,47 @@
+# BSR Audio Classification - Master Config
+
+data:
+  raw_audio_dir: "data/raw"            # Place your 65 .wav/.mp3 files here
+  annotations_dir: "data/annotations"  # Label Studio exports go here
+  segments_dir: "data/segments"        # Auto-generated segmented clips
+  sample_rate: 22050
+  window_sec: 2.0                       # Clip length in seconds
+  hop_sec: 1.0                          # Overlap hop in seconds
+  n_mels: 128
+  n_fft: 2048
+  hop_length: 512
+  nok_overlap_threshold: 0.5            # Clip is NOK if >50% overlaps a NOK region
+
+model:
+  backbone: "CNN14"                     # Options: CNN14, AST, MobileNetV2
+  pretrained: true
+  freeze_epochs: 5                      # Epochs to train only head
+  unfreeze_lr: 1.0e-5                   # LR after unfreezing backbone
+  head_lr: 1.0e-3                       # LR while head-only training
+  dropout: 0.3
+  embedding_dim: 2048                   # CNN14 output dim
+
+training:
+  epochs: 25
+  batch_size: 32
+  val_split: 0.15
+  test_split: 0.15
+  seed: 42
+  num_workers: 4
+  early_stopping_patience: 7
+  checkpoint_dir: "checkpoints"
+  log_dir: "runs"
+
+augmentation:
+  enabled: true
+  time_stretch_range: [0.8, 1.2]
+  pitch_shift_semitones: 2
+  noise_factor: 0.005
+  spec_time_mask_param: 30              # SpecAugment time masking
+  spec_freq_mask_param: 20             # SpecAugment freq masking
+  mixup_alpha: 0.4
+  use_mixup: true
+
+label_studio:
+  host: "http://localhost:8080"
+  project_name: "BSR_Audio_Classification"

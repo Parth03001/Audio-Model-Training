@@ -219,7 +219,7 @@ def build_ls_task(
 
     return {
         "data": {
-            "audio":    f"/data/local-files/?d={file_path.resolve()}",
+            "audio":    f"/data/local-files/?d={str(file_path.resolve()).replace(chr(92), '/')}",
             "file_name": file_path.name,
             "file_id":   file_path.stem,
         },

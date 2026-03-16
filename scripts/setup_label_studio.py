@@ -139,9 +139,11 @@ def import_audio_files(proj, audio_dir: str) -> int:
 
     tasks = []
     for f in sorted(files):
+        # Use forward slashes — Label Studio on Windows fails with backslashes
+        forward_path = str(f.resolve()).replace("\\", "/")
         tasks.append({
             "data": {
-                "audio": f"/data/local-files/?d={f.resolve()}",
+                "audio": f"/data/local-files/?d={forward_path}",
                 "file_name": f.name,
                 "file_id": f.stem,
             }
